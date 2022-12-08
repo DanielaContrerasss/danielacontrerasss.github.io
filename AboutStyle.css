@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    font-family: 'Times New Roman';
+
+}
+html{
+    height: 100%;
+    background:linear-gradient(#92a694, #2d4a2d);
+}
+h1{
+    text-align: center;
+    color: #dff8e2
+}
+
+.checked {
+
+    color: #8ac18a;
+}
+p{
+    font-size: 20px;
+    padding: 20px;
+    background-color: #2d4a2d;
+    color:#dff8e2;
+    border:5px solid #5d6a5d;
+    border-style: inset;
+    
+}
+
+

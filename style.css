@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  
+  font-family: Arial;
+}
+nav{
+    font-size: 32px;
+    background: #082e20;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    cursor:pointer;
+    color:#fff;
+    transition: .5s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul li:hover{
+    background: #718b76;
+    color: #fff;
+}
+.esthetician-image{
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1525498128493-380d1990a112?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    /* Change what part of the image you are showing */
+    background-position: center;
+    /* set the height to 100% of the veiwport height */
+    height: calc(100vh - 56px);
+    background-size: cover;
+    /* use flex to center horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esthetician-text{
+    color: #fff;
+    text-align: center;
+}
+.esthetician-text h2{
+    font-size: 50px;
+}
+.hire-btn{
+    text-decoration: none;
+    color: #fff;
+    background:  #2a3933;
+    padding: 10px 30px;
+    margin-top: 10px;
+    /* I have to change the anchor tag to inline block element */
+    display: inline-block;
+    /* width: 500px; */
+    border-radius: 10px;
+    transition: .5s
+}
+.hire-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 600px){
+    nav ul{
+        flex-direction: column;
+    }
+    .esthetician-image{
+        height: calc(100vh - 224px)
+    }
+}
